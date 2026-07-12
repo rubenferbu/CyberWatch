@@ -79,15 +79,6 @@ src/
 - **Dos Contexts separados** (`Favorites`, `Toast`) en vez de uno solo, siguiendo responsabilidad única: uno gestiona datos persistentes, el otro UI transitoria.
 - **`React.memo`** aplicado en `Card` y `FavoriteButton` para evitar renders innecesarios cuando el componente padre se re-renderiza por motivos ajenos a sus props.
 
-## 🔮 Mejoras futuras
-
-- [ ] Toggle de tema claro/oscuro
-- [ ] Paginación real de resultados (actualmente limitado a 20 por búsqueda)
-- [ ] Ordenamiento de favoritos por severidad/fecha (candidato a `useMemo`)
-- [ ] Tests unitarios con Vitest + React Testing Library
-- [ ] Exportar favoritos a PDF/CSV
-- [ ] Capturas de pantalla y demo en vivo (GitHub Pages / Vercel)
-
 ## 👤 Autor
 
 **Rubén Fernández Buzón**
