@@ -1,0 +1,61 @@
+.from {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-x1);
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs)
+}
+
+.input,
+.select {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: var(--space-sm) var(--space-md);
+    font-size: var(--font-size-base);
+    color: var(--color-text-primary);
+    transition: border-color var(--transition-fast);
+}
+
+.input:focus,
+.select:focus {
+    outline: none;
+    border-color: var(--color-none);
+}
+
+.error {
+    color: var(--color-critical);
+    font-size: var(--font-size-sm);
+}
+
+.button {
+    background-color: var(--color-none);
+    color: var(--color-bg);
+    font-weight: 600;
+    border: none;
+    border-radius: var(--radius-sm);
+    padding: var(--space-sm) var(--space-md);
+    cursor: pointer;
+    transition: opacity var(--transition-fast);
+}
+
+.button:hover {
+    opacity: 0.85;
+}
+
+/* Mobile First: base = columna. A partir de tablet, en fila */
+@media (min-width: 640px) {
+    .form {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .field {
+        flex: 1;
+    }
+}
