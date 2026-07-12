@@ -1,0 +1,20 @@
+
+@import './styles/reset.css';
+@import './styles/variables.css';
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Foco de teclado visible y consistente en toda la app */
+:focus-visible {
+  outline: 2px solid var(--color-none);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
