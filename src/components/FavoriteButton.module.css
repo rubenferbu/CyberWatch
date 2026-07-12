@@ -1,0 +1,23 @@
+.button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--color-text-secondary);
+  padding: var(--space-xs);
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.button:hover {
+  color: var(--color-high);
+  transform: scale(1.1);
+}
+
+.active {
+  color: var(--color-high);
+}
+
+.large {
+  font-size: 2rem;
+}
